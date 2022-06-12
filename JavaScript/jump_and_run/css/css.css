@@ -1,0 +1,122 @@
+.active{
+	display: block;
+}
+
+.passive{
+	display: none;
+}
+
+.menu{
+  position: relative;
+  width: 100%;
+}
+
+button{
+  position: absolute;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.rules{
+  position: relative;
+  width: 100%;
+}
+
+.jump_run{
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  font-size: 80px;
+}
+
+.menu .start_button{
+	top: 50%;
+}
+
+.menu .rules_button{
+	top: 65%;
+}
+
+.menu .exit_button{
+	top: 80%;
+}
+
+.menu .audio_button{
+	left: 5%;
+	top: 5%;
+}
+
+.rules_title{
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-size: 55px;
+}
+
+.rules_text{
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  max-width: 20%;
+  font-size: 28px;
+}
+
+.controls_title{
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  font-size: 55px;
+}
+
+.w_text{
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  font-size: 28px;
+}
+
+.s_text{
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  font-size: 28px;
+}
+
+.rules .menu_button{
+	top: 80%;
+}
+
+.rules .audio_button{
+	left: 5%;
+	top: 5%;
+}
+
+.game_over_title{
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  font-size: 75px;
+}
+
+.game_over_text{
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  font-size: 40px;
+}
+
+.game_over .menu_button{
+	top: 66%;
+}
+
+.game_over .exit_button{
+	top: 81%;
+}

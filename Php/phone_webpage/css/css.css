@@ -1,0 +1,200 @@
+body {
+	background-color:black;
+	color:white;
+}
+
+.header {
+	display:inline;
+	padding:5px;
+}
+
+.title {
+	position:relative;
+	text-align:center;
+	right:45%;
+	left:40%;
+	bottom:20px;
+	font-size: 35px;
+}
+
+.language {
+	border:3px solid GhostWhite;
+	background-color:white;
+	position:fixed;
+	right:0;
+	list-style-type: none;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+.language li {
+	background-color:RoyalBlue;
+	display: inline-block;
+	font-size: 20px;
+	border-style:solid;
+	border-color:MediumBlue;
+}
+
+a {
+	text-decoration:none;
+	color:white;
+}
+
+.nav {
+	background-color:RoyalBlue; 
+	list-style-type:none;
+	text-align: center;
+	margin:0;
+	padding:0;
+	margin-bottom:50px;
+}
+
+.nav li {
+	display:inline-block;
+	font-size:20px;
+	padding:10px;
+	padding-left:55px;
+	padding-right:55px;
+}
+
+.first {
+	padding-left:10px;
+}
+
+.selected {
+	border:3px solid;
+	border-color:white;
+}
+
+.intro_image1 {
+	margin-top:20px;
+	float:right;
+	width:300px;height:420px;
+}
+		
+.intro_image2 {
+	margin-top:60px;
+	float:right;
+	width:270px;height:350px;
+}
+		
+.intro_text {
+	float:left;
+	margin-left:150px;
+	margin-top:100px;
+	width:45%;
+}
+
+table {
+	border-collapse:collapse;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:60px;
+}
+
+th, td {
+	text-align:center;
+	padding:7px;
+	border:1px solid;
+}
+
+th {
+	background-color:RoyalBlue;
+	color:white;
+	border:white;
+}
+
+.faq_div {
+	margin-left:15%;
+	border:3px solid RoyalBlue;
+	width: 70%;
+}
+		
+hr {
+	border:1px solid RoyalBlue;
+}
+
+.gal_1 {
+	width:150px;height:250px;
+}
+
+.gal_2 {
+	width:300px;height:150px;
+}
+
+.gal_3 {
+	width:300px;height:200px;
+}
+
+.gal_rest {
+	width:250px;height:500px;
+}
+
+.review_div {
+	margin-left:5%;
+	border:3px solid RoyalBlue;
+	width: 55%;
+	margin-bottom: 10px;
+	text-align:center;
+}
+
+@keyframes contact_color {
+	from {border:3px solid RoyalBlue;}
+	to {border:3px solid white;}
+}
+
+.contact_div {
+	border:3px solid RoyalBlue;
+	width: 20%;
+	margin-bottom: 15px;
+	margin-left: 20px;
+	text-align:center;
+	animation-name:contact_color;
+	animation-duration:4s;
+	animation-iteration-count: infinite;
+}
+
+@media ( max-width:400px ) {
+	.nav {
+		margin-bottom:35px;
+	}
+	
+	.nav li {
+		display:inline-block;
+		font-size:9px;
+		padding:5px;
+	}
+
+	.title {
+		left:22%;
+	}
+	
+	.intro_image1 {
+		margin-top:0px;
+		width:150px;height:200px;
+	}
+			
+	.intro_image2 {
+		margin-top:20px;
+		margin-bottom:5px;
+		width:135px;height:175px;
+		float:left;
+	}
+
+	.intro_text {
+		margin-left:10%;
+		margin-top:0px;
+		width:80%;
+		text-align:center;
+	}
+	
+	.review_div {
+		margin-left:22%;
+	}
+	
+	.contact_div {
+		width:50%;
+	}
+}

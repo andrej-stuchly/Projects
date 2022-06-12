@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Hra</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <script src="js/objects.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/push_objects.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="menu_id" class="menu active">
+    <audio id="menu_audio">
+        <source src="audio/menu.ogg" type="audio/ogg">
+    </audio>
+    <img id="background" src="img/background_menu.png">
+    <div class="jump_run">Jump & Run</div>
+    <button class="start_button" onclick="start()"> Play</button>
+    <button class="rules_button" onclick="rules()"> Rules & Controls</button>
+    <button class="exit_button" onclick="exit()"> Exit</button>
+    <button id="audio_button_menu" class="audio_button" onclick="play_audio()">Play Audio</button>
+</div>
+<div id="rules_id" class="rules passive">
+    <img id="background" src="img/background_menu.png">
+    <div class="rules_title">Rules</div>
+    <div class="rules_text">Your character will be running to the right automatically and his speed increases over time.
+        Press W and S to
+        switch platforms in order to dodge dangers and collect as many coins as you can.
+    </div>
+    <div class="controls_title">Controls</div>
+    <div class="w_text">W - Jump up</div>
+    <div class="s_text">S - Jump down</div>
+    <button class="menu_button" onclick="menu()"> Back to menu</button>
+    <button id="audio_button_rules" class="audio_button" onclick="play_audio()">Play Audio</button>
+</div>
+<div id="game_id" class="game passive">
+    <canvas id="canvas" height="650" width="10450" style="background: url('img/background.jpg')"></canvas>
+</div>
+<div id="game_over_id" class="game_over passive">
+    <img id="background" src="img/background_menu.png">
+    <div class="game_over_title">GAME OVER!</div>
+    <div id="output" class="game_over_text"></div>
+    <button class="menu_button" onclick="menu()"> Back to menu</button>
+    <button class="exit_button" onclick="exit()"> Exit</button>
+</div>
+</body>
+</html>
